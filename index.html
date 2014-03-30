@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+  <head>
+    <meta name="format-detection" content="telephone=no" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <!--link rel="stylesheet" type="text/css" href="css/index.css" /-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css">
+    <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>  
+    <!--script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+    <script type="text/javascript" charset="utf-8" src="PushNotification.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/index.js"></script--> 
+    <script src="js/jquery.localize.js"></script>
+ 
+  </head>
+  <body>
+
+  <!-- Start of first page -->
+  <div data-role="page" data-fullscreen="true" id="main-shop">
+ 
+    <div data-role="header" data-position="fixed">
+      <div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-left">
+        <a href="#nav-panel" class="ui-btn ui-icon-bars ui-btn-icon-notext ui-corner-all">Menu</a>
+        <a href="#account-form" class="ui-btn ui-icon-gear ui-btn-icon-notext ui-corner-all">Account</a>
+      </div>
+      <h1>WeTrade</h1>
+      <div data-role="controlgroup" data-type="horizontal" class="ui-mini ui-btn-right">
+        <a href="#wish-list" class="ui-btn ui-icon-shop ui-btn-icon-notext ui-corner-all">My Wish List</a>
+        <a href="#" class="ui-btn ui-btn-b ui-icon-refresh ui-btn-icon-notext ui-corner-all">Reload</a>
+      </div>
+    </div><!-- /header -->
+ 
+    <div data-role="content">
+      <div data-role="navbar" data-grid="c">
+       <ul>
+        <li><a href="#" data-localize="Performance" class="ui-btn-active">Performance</a></li>
+        <li><a href="#" data-localize="Stability">Stability</a></li>
+        <li><a href="#" data-localize="Min Drawdown">Min Drawdown</a></li>
+        <li><a href="#" data-localize="Frequency">Frequency</a></li>
+       </ul>
+      </div><!-- /navbar -->
+
+      <ul data-role="listview" data-inset="true" data-filter="true" id="selector_id_01">
+        <li><a href="#traderA" class="demo_go_detail" data-url-text="Trader A"><h2>Trader A</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader B"><h2>Trader B</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader C"><h2>Trader C</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader D"><h2>Trader D</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader E"><h2>Trader E</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader F"><h2>Trader F</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader G"><h2>Trader G</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader H"><h2>Trader H</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader I"><h2>Trader I</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader J"><h2>Trader J</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader K"><h2>Trader K</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader L"><h2>Trader L</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader M"><h2>Trader M</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader N"><h2>Trader N</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader O"><h2>Trader O</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader P"><h2>Trader P</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader Q"><h2>Trader Q</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader R"><h2>Trader R</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader S"><h2>Trader S</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader T"><h2>Trader T</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader U"><h2>Trader U</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader V"><h2>Trader V</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader W"><h2>Trader W</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader X"><h2>Trader X</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader Y"><h2>Trader Y</h2><p>Performance: AAA%</p></a></li>
+        <li><a href="#" class="demo_go_detail" data-url-text="Trader Z"><h2>Trader Z</h2><p>Performance: AAA%</p></a></li>
+      </ul>
+    </div><!-- /content -->
+    <div data-role="footer" data-position="fixed">
+      <h4>&copy 2014 WeTrade Corporation</h4>
+    </div><!-- /footer -->
+
+    <div data-role="panel" data-position-fixed="true" data-display="push" data-theme="b" id="nav-panel">
+      <ul data-role="listview">
+        <li data-icon="delete"><a href="#" data-rel="close" data-localize="Close menu">Close menu</a></li>
+        <li data-role="list-divider" data-localize="My Trades">My Trades</li>
+        <li><a href="#my-follows" data-localize="My Follows">My Follows</a></li>
+        <li><a href="#my-trades" data-localize="My Trades">My Trades</a></li>
+        <li data-role="list-divider" data-localize="Trade Fair">Trade Fair</li>
+        <li><a href="#main-shop" data-localize="Main Shop">Main Shop</a></li>
+        <li><a href="#wish-list" data-localize="Wish List">Wish List</a></li>
+        <li><a href="#shopping-cart" data-localize="Shopping Cart">Shopping Cart</a></li>
+        <li data-role="list-divider" data-localize="Setting">Setting</li>
+        <li><a href="#panel-fixed-page2" data-localize="Account Information">Account Information</a></li>
+        <li><a href="#panel-fixed-page2" data-localize="Settings">Settings</a></li>
+        <li data-role="list-divider" data-localize="Language">Language</li>
+	<select id="changeLocale">
+	  <option value="en" data-localize="English">English</option>
+	  <option value="zh-TW" data-localize="Tranditional Chinese">Tranditional Chinese</option>
+	  <option value="zh-CN" data-localize="Simplified Chinese">Simplified Chinese</option>
+	</select>
+        <li data-role="list-divider" data-localize="Exit">Exit</li>
+        <li><a href="#panel-fixed-page2" data-localize="Logout and Exit">Logout and Exit</a></li>
+      </ul>
+    </div><!-- /panel -->
+
+    <div data-role="panel" data-position="left" data-position-fixed="true" data-display="push" data-theme="a" id="account-form">
+      <form class="userform">
+        <h2  data-localize="Login">Login</h2>
+        <label for="name"  data-localize="Username:">Username:</label>
+        <input type="text" name="name" id="name" value="" data-clear-btn="true" data-mini="true">
+        <label for="password"  data-localize="Password:">Password:</label>
+        <input type="password" name="password" id="password" value="" data-clear-btn="true" autocomplete="off" data-mini="true">
+        <div class="ui-grid-a">
+          <div class="ui-block-a"><a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-b ui-mini" data-localize="Cancel">Cancel</a></div>
+          <div class="ui-block-b"><a href="#" data-rel="close" class="ui-btn ui-shadow ui-corner-all ui-btn-a ui-mini" data-localize="Save">Save</a></div>
+        </div>
+      </form>
+    </div><!-- /panel -->
+    
+    <div data-role="panel" data-position="right" data-position-fixed="true" data-display="overlay" data-theme="a" id="udo_00">
+      <h1>PhoneGap</h1>
+      <div id="deviceready" class="blink">
+        <p class="event listening">Connecting to Device</p>
+        <p class="event received">Device is Ready</p>
+      </div>
+    </div>
+ 
+  </div><!-- /page -->
+
+  <!-- Start of second page -->
+  <div data-role="page" data-fullscreen="true" id="shopping-cart">
+
+    <div data-role="header" data-position="fixed">
+      <h1>Shopping Cart</h1>
+      <a href="#main-shop" class="ui-btn ui-btn-icon-right ui-icon-back"  data-localize="Back">Back</a>
+    </div><!-- /header -->
+
+	<div role="main" class="ui-content">
+   
+      <ul data-role="listview">
+        <li>
+          <h2>Trader A</h2>
+          <p>Performance: AAA</p>
+          <label>
+            <input type="checkbox" name="checkbox-0 ">Secretary Mode
+          </label>
+          <p class="ui-li-aside">$<strong>S.SS</strong> USD</p>
+        </li>
+        <li>
+          <h2>Trader B</h2>
+          <p>Performance: AAA</p>
+          <label>
+            <input type="checkbox" name="checkbox-0 ">Secretary Mode
+          </label>
+          <p class="ui-li-aside">$<strong>S.SS</strong> USD</p>
+        </li>
+        
+         <li>  
+          <br>
+          <label>
+            <a href="#popupDialog03" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn">Buy Signal</a> 
+          </label>  
+          <p class="ui-li-aside">total $<strong>S.SS</strong> USD</p>
+        </li>
+      </ul>
+     
+	</div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
+      <h4>&copy 2014 WeTrade Corporation</h4>
+	</div><!-- /footer -->
+  
+   <!--popup window 01 -->
+   <div data-role="popup" id="popupDialog03" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+     <div data-role="header" data-theme="a">
+     <h1>Add ShoppingCart</h1>
+     </div>
+     <div role="main" class="ui-content">
+       <h3 class="ui-title">Are you sure you want to add it?</h3>
+       <p>This action cannot be undone.</p>
+       <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">OK</a>
+       <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow">Cancel</a>
+     </div> 
+   </div>
+   
+  
+  </div><!-- /page -->
+
+  <!-- Start of third page -->
+  <div data-role="page" data-fullscreen="true" id="wish-list">
+
+    <div data-role="header" data-position="fixed">
+      <h1>Wish List</h1>
+      <a href="#main-shop" class="ui-btn ui-btn-icon-right ui-icon-back"  data-localize="Back">Back</a>
+    </div><!-- /header -->
+
+	<div role="main" class="ui-content">
+   
+      <ul data-role="listview">
+        <li data-icon="delete"><a href="#" class="demo_go_detail" data-url-text="Trader A"><h2>Trader A</h2><p>Performance: AAA% $<strong>S.SS</strong> USD</p></a></li>
+        <li data-icon="delete"><a href="#" class="demo_go_detail" data-url-text="Trader B"><h2>Trader B</h2><p>Performance: AAA% $<strong>S.SS</strong> USD</p></a></li>
+        <li data-icon="delete"><a href="#" class="demo_go_detail" data-url-text="Trader C"><h2>Trader C</h2><p>Performance: AAA% $<strong>S.SS</strong> USD</p></a></li>
+        <li data-icon="delete"><a href="#" class="demo_go_detail" data-url-text="Trader D"><h2>Trader D</h2><p>Performance: AAA% $<strong>S.SS</strong> USD</p></a></li>
+      </ul>
+     
+	</div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
+      <h4>&copy 2014 WeTrade Corporation</h4>
+	</div><!-- /footer -->
+  
+  </div><!-- /page -->
+
+  <!-- Start of My Follows page -->
+  <div data-role="page" data-fullscreen="true" id="my-follows">
+
+    <div data-role="header" data-position="fixed">
+      <h1>My Follows</h1>
+      <a href="#main-shop" class="ui-btn ui-btn-icon-right ui-icon-back"  data-localize="Back">Back</a>
+    </div><!-- /header -->
+
+	<div role="main" class="ui-content">
+	</div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
+      <h4>&copy 2014 WeTrade Corporation</h4>
+	</div><!-- /footer -->
+  
+  </div><!-- /page -->
+
+  <!-- Start of My Trades page -->
+  <div data-role="page" data-fullscreen="true" id="my-trades">
+
+    <div data-role="header" data-position="fixed">
+      <h1>My Trades</h1>
+      <a href="#main-shop" class="ui-btn ui-btn-icon-right ui-icon-back" data-localize="Back">Back</a>
+    </div><!-- /header -->
+
+	<div role="main" class="ui-content">
+	</div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
+      <h4>&copy 2014 WeTrade Corporation</h4>
+	</div><!-- /footer -->
+  
+  </div><!-- /page -->
+
+
+  <!-- Start of trader page -->
+  <div data-role="page" data-fullscreen="true" id="traderA">
+
+    <div data-role="header" data-position="fixed">
+       <h1 id="detail_title">WeTrade : Trader XXX  </h1>
+       <a href="#main-shop" class="ui-btn ui-btn-icon-right ui-icon-back" data-localize="Back">Back</a>
+    </div><!-- /header -->
+
+	<div role="main" class="ui-content">  
+  <div data-role="fieldcontain">  
+   <div class="ui-grid-a">
+    <div class="ui-block-a">
+     <label style="float:left; text-align: left;">Performance: From 2014/02/14 to 2014/02/28</label>        
+    </div>
+   <div class="ui-block-b">
+      <label style="float:right; text-align: right;">View Trade Records</label>
+   </div> 
+ 
+   <div class="ui-block-a"> 
+       <!-- Google Charts-->      
+       <div id='chart_div'>description
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+       <br>
+      </div>
+   </div>
+  
+   <div class="ui-block-a">
+      Descriptions 
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>     
+      <br>                 
+   </div>
+  
+   <div class="ui-block-a">  
+         <a href="#popupDialog02" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn">Follow Trader</a>        
+         <br>
+         <button href="#popupDialog" class="ui-btn">Secretary Mode..</button>          
+   </div>
+   <div class="ui-block-b">
+        <button class="ui-btn">$$ 10,000USD</button>
+         <br>
+        <a href="#popupDialog01" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-btn">Add to Wishlist</a>
+          
+   </div>
+  
+   <div class="ui-block-a">
+        
+      More perfomance Indexes <br>
+      Performance Ratios <br>
+      Total Trade Analysis
+      
+   </div>
+   
+ </div>
+ </div>   
+	</div><!-- /content -->
+
+    <div data-role="footer" data-position="fixed">
+      <h4>&copy 2014 WeTrade Corporation</h4>
+	</div><!-- /footer -->
+  
+  <!--popup window 01 -->
+   <div data-role="popup" id="popupDialog01" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+    <div data-role="header" data-theme="a">
+         <h1>Adding</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <h3 class="ui-title">It has adding into your wishlist.</h3>
+        <p>This action cannot be undone.</p>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">OK</a>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow">Cancel</a>
+    </div>
+   </div>
+   
+   <!--popup window 02 -->
+   <div data-role="popup" id="popupDialog02" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+    <div data-role="header" data-theme="a">
+    <h1>Connecting to Vendor....</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <h3 class="ui-title">Are you sure you want to go to next page?</h3>
+        <p>This action cannot be undone.</p>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">OK</a>
+        <a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back" data-transition="flow">Cancel</a>
+    </div> 
+   </div>
+   
+  </div><!-- /page -->    
+  <script>
+    $(document).ready(function() {
+      app.initialize();
+      $(".demo_go_detail").click(function(event){   
+        $('#detail_title').text("WeTrade : " + $(this).attr("data-url-text"));    
+        location.href = "#traderA";
+        event.preventDefault();
+      });
+    });
+    $('#changeLocale').change(function() {
+      var newLang = $(this).val();
+      $("[data-localize]").localize("language/example", { language: newLang });
+    })
+  </script>
+  </body>
+</html>
